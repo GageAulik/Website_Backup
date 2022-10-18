@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+        <!-- games.html  Example game page displaying game data. -->
+        <!-- Michael Gage Aulik 12/14/2021-->
+        <!-- The data for these games will be shown on this page, connected by a landing page -->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link href="games.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="games.js" defer></script>
+    <title>Game Data</title>
+</head>
+<body>
+  <h1>Games</h1>
+  <h3>Click on a game to show it's information</h3>
+        <!-- this div is a container for our game titles -->
+  <div class="navleft">
+    <nav id="gamenames">
+        <!---a list of game names will be created -->
+    </nav>
+    <main>
+      <!-- These are buttons that will allow us to add information into our SQL or cancel/go back if needed-->
+      <div>
+        <a href="/"><button type="button" class="cancelbtn">Back</button></a>
+        <form method="post" action="http://45.79.221.107:3040/add">
+          <input type="submit" id="addbutton" name="addsomething" value="Add"></input>
+
+
+        <!-- These are all inputs that will store the data from our SQL database api -->
+       <p>
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" value="None">
+       </p>
+       <p>
+         <label for="players">Players:</label>
+         <input type="text" class="digits" id="players" name="players" value="0">
+         <span id="units"></span>
+       </p>
+       <p>
+         <label for="studio">Studio:</label>
+         <input type="text" class="digits" id="studio" name="studio" value="0">
+       </p>
+       <p>
+         <label for="date">Date:</label>
+         <input type="text" class="digits" id="date" name="date" value="0">
+       </p>
+       <p>
+         <label for="genres">Genre:</label>
+         <input type="text" class="digits" id="genres" name="genres" value="0">
+       </p>
+     </form>
+   </div>
+      <br>
+      <br>
+      <!-- just some information -->
+       <p>To add a title and it's info just fill out the text area's and select add.</p>
+       <p>If you want to cancel what you are adding, hit cancel</p>
+    </main>
+  </div>
+</body>
+</html>

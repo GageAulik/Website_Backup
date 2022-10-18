@@ -1,0 +1,33 @@
+create table games(
+   id integer not null auto_increment primary key,
+   name varchar(40),
+   players integer,
+   studio varchar(30)
+);
+
+create table date (
+   id  integer,
+   dates date
+);
+
+create table genres (
+   id integer, 
+   genretype varchar(40)
+);
+
+insert into games
+values ( 1, 'World of Warcraft', 1, ' Blizzard');
+insert into games
+value ( 2, 'Ghosts of Tsushima', 1, ' Sucker Punch');
+insert into games
+value( 3, 'It Takes Two', 2, ' Hazelight');
+
+insert into date values ( 1, '2004-11-23');
+insert into date values ( 2, '2020-06-17');
+insert into date values ( 3, '2021-03-26');
+
+insert into genres values (1, 'MMO');
+insert into genres values (2, 'RPG');
+insert into genres values (3, 'CO-OP');
+
+

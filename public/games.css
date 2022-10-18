@@ -1,0 +1,39 @@
+
+/* Gage Aulik CSS for games */
+
+ /* set background to an awesome color */
+
+ body {
+    background-color: gray;
+ }
+  /* contain the games within an area */
+  /* allign subjects  */
+ #containter {
+   background-color: gray;
+   border: 5px solid #F5E4C3;
+   height: 275px;
+   width: 750px;
+   margin: auto;
+   text-align: center;
+ }
+
+ /* Color text white and center */
+ p, h1, h3, h4, nav {
+   color: white;
+   text-align: center;
+
+
+ }
+ /* center more things */
+ div, input, #btntest, #link {
+   text-align: center;
+   justify-content: center;
+ }
+
+/* make the link larger and easier to see */
+
+
+#link {
+  font-size: 36px;
+
+}
